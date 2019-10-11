@@ -3,7 +3,7 @@
 using std::cout;
 using std::cin;
 using std::endl;
-
+using std::cerr;
 
 int main(int argc, char* argv[]){
 	const double PI = 3.1415926535;
@@ -12,10 +12,26 @@ int main(int argc, char* argv[]){
 	cout << "Welcome Austin!" << endl;
 	cout << "Please input the Initial Speed (m/s): ";
 	double speed;
-	cin >> speed;
+	while (1){
+		cin >> speed;
+		if (speed > 0)
+			break;
+		cerr << "Austin! Input only positive numbers" << endl;
+	}
 	cout << "Please input the Angle (Degrees): ";
 	double degrees;
-	cin >> degrees;
+	while (1){
+		cin >> degrees;
+		if (degrees < 0){
+			cerr << "Austin! You may not use negative degrees" << endl;
+			continue;
+		}else if (degrees >= 90){
+			cerr << "Austin! Are you crazy? The degree has to be less than 90" << endl;
+			continue;
+		}else{
+			break;
+		}	
+	}
 	double radians = PI * degrees / 180; 
 	double distance = speed * speed * sin(2 * radians) / G;
 

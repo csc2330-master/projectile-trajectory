@@ -23,6 +23,7 @@ From these equations we can calculate how long is the projectile going to take t
 ![equation](https://latex.codecogs.com/gif.latex?0%3DV_o%5Csin%5Ctheta%20t%20-%20%5Cfrac%7B1%7D%7B2%7Dgt%5E2)
 
 ![equation](https://latex.codecogs.com/gif.latex?0%3Dt%20%5Cleft%20%28V_o%5Csin%5Ctheta%20-%20%5Cfrac%7B1%7D%7B2%7Dgt%20%5Cright%20%29)
+
 Therefore:
 
 ![equation](https://latex.codecogs.com/gif.latex?y%20%3D%200%2C%20t%3D0)
